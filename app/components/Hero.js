@@ -22,9 +22,9 @@ const Hero = () => {
           style={{ mixBlendMode: "multiply" }}
         ></div>
       </div>
-      <div className="relative pt-12 pb-16 sm:pt-16 sm:pb-24 lg:pb-32">
-        <div className="max-w-md mx-auto pl-4 pr-8 sm:max-w-3xl sm:px-6 lg:px-8 lg:max-w-7xl">
-          <h2 className="text-4xl font-extrabold tracking-tight sm:text-5xl lg:text-6xl text-white">
+      <div className="relative flex pt-12 pb-16 sm:pt-16 sm:pb-24 lg:pb-32">
+        <div className="max-w-md justify-center mx-auto pl-4 pr-2 sm:max-w-3xl sm:px-6 lg:px-8 lg:max-w-7xl">
+          <h2 className="text-2xl font-semibold tracking-tight sm:text-5xl lg:text-4xl text-white">
             We do web designs for businesses
           </h2>
           <p className="mt-4 text-xl text-gray-300">We help them grow</p>
