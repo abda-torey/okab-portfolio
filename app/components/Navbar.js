@@ -6,10 +6,10 @@ const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <nav className="flex items-center bg-gray-800 text-white justify-between flex-wrap p-6">
-      <div className="flex items-center flex-shrink-0 text-white mr-6 lg:mr-72">
+    <nav className="flex items-center bg-white-800 text-dark justify-between flex-wrap p-6">
+      <div className="flex items-center flex-shrink-0 text-dark mr-6 lg:mr-72">
         <svg
-          className="w-6 h-6 md:w-10 md:h-10 text-blue-200"
+          className="w-6 h-6 md:w-10 md:h-10 text-blue-300"
           fill="currentColor"
           stroke="currentColor"
           strokeWidth="1.5"
@@ -51,7 +51,7 @@ const Navbar = () => {
      <div
   className={`w-full block pl-9   lg:flex lg:items-center lg:w-auto ${isOpen ? "block" : "hidden"} lg:justify-end`}
 >
-  <div className="font-mono font-semibold lg:flex-grow lg:items-center">
+  <div className="font-helvetica font-semibold lg:flex-grow lg:items-center">
     <Link href="#" className="block  mt-4 lg:inline-block lg:mt-0 text-white-200 mr-4">
       Home
     </Link>
