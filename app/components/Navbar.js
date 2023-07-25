@@ -8,6 +8,7 @@ const Navbar = () => {
   return (
     <nav className="flex items-center bg-white-800 text-dark justify-between flex-wrap p-6">
       <div className="flex items-center flex-shrink-0 text-dark mr-6 lg:mr-72">
+        {/* a puzzle piece svg from heroIcons*/}
         <svg
           className="w-6 h-6 md:w-10 md:h-10 text-blue-300"
           fill="currentColor"

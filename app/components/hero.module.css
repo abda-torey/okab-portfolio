@@ -3,5 +3,9 @@
     /* Your styles go here */
     .heroText{
         align-items: center;
+        
+    }
+    .heroText h2,.heroText p {
+        font-size:medium;
     }
   }
