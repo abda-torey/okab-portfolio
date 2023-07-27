@@ -52,19 +52,19 @@ const Navbar = () => {
      <div
   className={`w-full block pl-9   lg:flex lg:items-center lg:w-auto ${isOpen ? "block" : "hidden"} lg:justify-end`}
 >
-  <div className="font-helvetica font-semibold lg:flex-grow lg:items-center">
-    <Link href="#" className="block  mt-4 lg:inline-block lg:mt-0 text-white-200 mr-4">
+  <div className="font-helvetica font-semibold lg:flex-grow lg:items-center ">
+    <Link href="/" className="block  mt-4 lg:inline-block lg:mt-0 text-white-200 mr-4">
       Home
     </Link>
-    <a href="#" className="block mt-4 lg:inline-block lg:mt-0 text-white-200 mr-4">
+    <Link href="/services" className="block mt-4 lg:inline-block lg:mt-0 text-white-200 mr-4">
       Services
-    </a>
-    <a href="#" className="block mt-4 lg:inline-block lg:mt-0 text-white-200 mr-4">
+    </Link>
+    <Link href="/portfolio" className="block mt-4 lg:inline-block lg:mt-0 text-white-200 mr-4">
       Portfolio
-    </a>
-    <a href="#" className="block mt-4 lg:inline-block lg:mt-0 text-white-200 mr-4">
+    </Link>
+    <Link href="/about" className="block mt-4 lg:inline-block lg:mt-0 text-white-200 mr-4">
       About Us
-    </a>
+    </Link>
   </div>
   <div>
     <button className="font-semibold inline-flex items-center rounded  bg-amber-500 border-0 my-2 py-2 px-4 text-white">
