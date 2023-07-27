@@ -3,7 +3,7 @@ import { FaGithub } from 'react-icons/fa'
 
 const PortfolioCard= () => {
   return (
-    <div class="relative flex max-w-[48rem]  flex-col rounded-xl text-black  bg-clip-border transition-all duration-300 shadow-sm shadow-black ">
+    <div class="relative flex max-w-[48rem]  flex-col rounded-xl text-black hover hover:shadow-orange-500  bg-clip-border transition-all duration-300 shadow-sm shadow-orange-300">
         <div class="relative m-0 w-full h-2/5 shrink-0 overflow-hidden rounded-xl rounded-b-none bg-white bg-clip-border">
             <img
                 src="/hero.jpeg"
@@ -24,7 +24,7 @@ const PortfolioCard= () => {
         </Link>
         <Link class="inline-block" href="">
           <button
-            class="flex select-none items-center gap-2 rounded-lg py-3 px-6 text-center align-middle font-sans text-xs font-bold uppercase text-blue-500 transition-all hover:bg-blue-500/10 active:bg-blue-500/30 disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
+            class="flex select-none items-center gap-2 rounded-lg py-3 px-6 text-center align-middle font-sans text-xs font-bold uppercase text-orange-500 transition-all hover:bg-orange-500/10 active:bg-orange-500/30 disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
             type="button"
           >
             View site
