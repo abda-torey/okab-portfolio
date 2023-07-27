@@ -1,9 +1,9 @@
 import Link from 'next/link'
-import { FaGithub } from 'react-icons/fa'
+
 
 const PortfolioCard= () => {
   return (
-    <div class="relative flex max-w-[48rem]  flex-col rounded-xl text-black hover hover:shadow-orange-500  bg-clip-border transition-all duration-300 shadow-sm shadow-orange-300">
+    <div class="relative flex max-w-[48rem]  flex-col rounded-xl text-black hover hover:shadow-orange-500 hover:scale-110 bg-clip-border transition-all duration-300 shadow-sm shadow-orange-300">
         <div class="relative m-0 w-full h-2/5 shrink-0 overflow-hidden rounded-xl rounded-b-none bg-white bg-clip-border">
             <img
                 src="/hero.jpeg"
