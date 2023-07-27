@@ -1,46 +1,36 @@
-import Image from "next/image";
+import Image from "next/legacy/image";
 import styles from './hero.module.css'
+import Link from "next/link";
 
 const Hero = () => {
   return (
-    <div className="relative">
-      <div className="absolute inset-0 ">
-        <div className="absolute inset-0 overflow-hidden">
-          {/* <Image 
-          src="/hero.png" 
-          alt="" 
-          fill style={{ objectFit: "cover" }} /> */}
-          <Image
-            src="/hero.png"
-            alt="Hero Image"
-            layout="fill"
-            objectFit="cover"
-            
-          />
-        </div>
-        <div
-          className="absolute inset-0 bg-white opacity-80"
-          style={{ mixBlendMode: "multiply" }}
-        ></div>
-      </div>
-      <div className="relative flex justify-end pt-12 md:mr-10  pb-16 sm:pt-16 sm:pb-24 lg:pb-32">
-        <div className={` ${styles.heroText} max-w-md  pr-2 sm:max-w-3xl pl-6 md:mt-10 lg:px-8 lg:max-w-7xl`}>
-          <h2 className="text-xl font-semibold tracking-tight md:mt-10  lg:text-4xl text-white ">
+    <div className="relative h-screen grid md:grid-cols-2 mt-20 space-x-20 sm:grid-cols-1 px-10 transition-all duration-75 ">
+    
+        <div className={` ${styles.heroText} flex flex-col justify-start mt-1 ml-6 order-2`}>
+          <h2 className="text-xl font-semibold tracking-tight md:mt-10  lg:text-4xl text-gray-900 mb-3 ">
             We do web designs for businesses
           </h2>
-          <p className="mt-4 text-xl text-gray-200">We help them grow</p>
-          <div className="mt-10">
-            <div className="inline-flex rounded-md shadow">
-              <a
+          <p className="text-xl mb-4">We help them grow</p>
+         
+          <div>
+            <Link
                 href="#"
-                className="inline-flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-white bg-orange-600 hover:bg-orange-700"
+                className=" inline-flex items-center justify-center px-5 py-3  text-base font-medium rounded-md text-white bg-orange-600 hover:bg-orange-700"
               >
-                Talk to us
-              </a>
-            </div>
+                <button className="border border-transparent"> Talk to us </button> 
+              </Link>
           </div>
         </div>
-      </div>
+    
+      <div className="overflow-hidden order order-1">
+          <Image
+            src="/hero4.svg"
+            alt="Hero Image"
+            width={700}
+            height={500}
+            className="filter bg-gray-50"
+          />
+        </div>
     </div>
   );
 };
