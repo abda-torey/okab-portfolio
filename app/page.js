@@ -12,9 +12,9 @@ export default function Home() {
       <Navbar />
       <Hero />
       <Services />
-      <TrustedBy />
+      {/* <TrustedBy /> */}
       <StatsSection />
-      {/* <Portfolio/> */}
+      <Portfolio/>
     </>
   );
 }
