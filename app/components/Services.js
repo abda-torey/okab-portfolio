@@ -1,7 +1,7 @@
 import { FaLaptopCode, FaSearch, FaRegLightbulb } from "react-icons/fa";
 
 const Services = () => (
-  <div className="p-4 h-screen">
+  <div className="p-8 mb-8  bg-gray-100">
     <h1 className="text-xl font-semibold text-center mt-6 mb-6">
       <span className="rounded-lg font-helvetica text-blue-600 px-3 py-1 inline-block">What We Do</span>
     </h1>
