@@ -14,7 +14,7 @@ export default function Home() {
       <Services />
       <TrustedBy />
       <StatsSection />
-      {/* <Portfolio/> */}
+      <Portfolio/>
     </>
   );
 }

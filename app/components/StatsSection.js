@@ -5,7 +5,7 @@ import VisibilitySensor from "react-visibility-sensor";
 
 const StatCard = ({ end, title, description }) => {
   return (
-    <div className="max-w-sm mx-auto bg-white rounded-xl shadow-sm overflow-hidden md:max-w-2xl m-4 p-6">
+    <div className="max-w-sm mx-auto bg-orange-100 rounded-xl shadow-sm overflow-hidden md:max-w-2xl m-4 p-6">
       <div className="text-blue-600 text-5xl mb-2 text-center">
         <CountUp end={end} redraw={true} suffix="+">
           {({ countUpRef, start }) => (
@@ -16,7 +16,7 @@ const StatCard = ({ end, title, description }) => {
         </CountUp>
       </div>
       <div className="text-xl mb-2 text-center">{title}</div>
-      <p className="text-gray-500">{description}</p>
+      <p className="text-gray-500 text-center">{description}</p>
     </div>
   );
 };

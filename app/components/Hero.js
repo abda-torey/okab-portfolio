@@ -4,7 +4,7 @@ import Link from "next/link";
 
 const Hero = () => {
   return (
-    <div className="relative h-screen grid md:grid-cols-2 mt-20 space-x-20 sm:grid-cols-1 px-10 transition-all duration-75 ">
+    <div className="relative h-screen grid md:grid-cols-2 mt-20 space-x-20 xs:grid-cols-1 px-10 transition-all duration-75 ">
     
         <div className={` ${styles.heroText} flex flex-col justify-start mt-1 ml-6 order-2`}>
           <h2 className="text-xl font-semibold tracking-tight md:mt-10  lg:text-4xl text-gray-900 mb-3 ">

@@ -1,24 +1,25 @@
 import Link from 'next/link'
-
+import Image from 'next/legacy/image'
 
 const PortfolioCard= () => {
   return (
-    <div class="relative flex max-w-[48rem]  flex-col rounded-xl text-black hover hover:shadow-orange-500 hover:scale-110 bg-clip-border transition-all duration-300 shadow-sm shadow-orange-300">
-        <div class="relative m-0 w-full h-2/5 shrink-0 overflow-hidden rounded-xl rounded-b-none bg-white bg-clip-border">
-            <img
+    <div class="relative flex   flex-col rounded-xl text-black hover hover:shadow-orange-500 hover:scale-110 bg-clip-border transition-all duration-300 shadow-sm shadow-orange-300">
+        <div class=" relative m-0 w-full h-2/5 shrink-0 overflow-hidden rounded-xl rounded-b-none bg-white bg-clip-border">
+            <Image
                 src="/hero.jpeg"
+                layout='fill'
                 alt="img"
                 class=" object-cover"
             />
         </div>
-    <div class="p-6 mb-8">
+    <div class="p-2 mb-8 ">
       <h6 class="mb-4 block font-sans text-base font-semibold capitalize leading-relaxed tracking-normal text-blue-500 antialiased">
         company name
       </h6>
       <p class="mb-8 block font-sans text-base font-normal leading-relaxed text-blac antialiased">
         wonderful portfolio
       </p>
-      <div className='flex gap-4 mt-20 items-center '>
+      <div className=' flex gap-4  items-center mb-20 p-4 '>
         <Link href="" className='inline-block'>
              <p className='text-xl'>Logo</p>
         </Link>
@@ -53,9 +54,9 @@ const PortfolioCard= () => {
 }
 const Portfolio = () => {
     return (
-        <div className=' h-screen flex flex-col items-center m-10 p-10 '>
+        <div className=' h-screen flex flex-col items-center '>
             <h1 className='capitalize  text-xl font-bold tracking-wider pt-10 text-blue-500'>What we've built</h1>
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-20 py-10  m-3 sm:place-content-stretch">
+            <div className=" w-3/4  grid  md:grid-cols-2 lg:grid-cols-3  gap-20 py-10  m-3 sm:place-content-stretch">
               
                  <PortfolioCard />
                  <PortfolioCard />
