@@ -1,0 +1,21 @@
+<svg width="181" height="192" viewBox="0 0 181 192" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <g style="mix-blend-mode:overlay">
+        <path
+            d="M60.5431 1.49638C193.705 9.56001 243.094 127.997 60.5425 190.997C-3.92307 194.379 -32.4966 -39.9876 60.5425 47L161 111C127.506 69.8272 -63.4796 -6.57012 60.5431 1.49638Z"
+            fill="url(#paint0_linear_1_2)" />
+        <path
+            d="M60.5425 190.997C243.094 127.997 193.705 9.56001 60.5431 1.49638C-63.4796 -6.57012 127.506 69.8272 161 111M60.5425 190.997C-3.92307 194.379 -32.4966 -39.9876 60.5425 47L161 111M60.5425 190.997L161 111"
+            stroke="white" stroke-opacity="0.81" />
+    </g>
+    <defs>
+        <linearGradient id="paint0_linear_1_2" x1="-20.3555" y1="17.0841" x2="-20.3555" y2="150.037"
+            gradientUnits="userSpaceOnUse">
+            <stop offset="0.135417" stop-color="#DFBB86" stop-opacity="0" />
+            <stop offset="0.208333" stop-color="#EFD269" stop-opacity="0.276042" />
+            <stop offset="0.34375" stop-color="#F6CC8C" stop-opacity="0.78" />
+            <stop offset="0.375" stop-color="#EFC269" stop-opacity="0.286121" />
+            <stop offset="0.9997" stop-color="#EFC269" stop-opacity="0.802083" />
+        </linearGradient>
+    </defs>
+</svg>
+    
