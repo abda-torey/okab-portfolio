@@ -2,9 +2,15 @@
 import { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
+import Popup from "./Popup";
 Image
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const [isModalOpen, setIsModalOpen] = useState(false);
+
+  const onSubmit = data => {
+    console.log(data);
+  };
 
   return (
     <nav className="flex items-center bg-white-800 text-dark justify-between flex-wrap p-6">
@@ -73,12 +79,14 @@ const Navbar = () => {
     </Link>
   </div>
   <div>
-    <button className="font-semibold inline-flex items-center rounded  bg-amber-500 border-0 my-2 py-2 px-4 text-white">
+    <button className="font-semibold inline-flex items-center rounded  bg-amber-500 border-0 my-2 py-2 px-4 text-white"
+    onClick={() => setIsModalOpen(true)}
+    >
       Talk to Us
     </button>
   </div>
 </div>
-
+<Popup isOpen={isModalOpen} setIsOpen={setIsModalOpen} onSubmit={onSubmit} />
     </nav>
   );
 };
