@@ -25,7 +25,7 @@ export default function StatsSection() {
   return (
     <div className="grid lg:grid-cols-3  md:grid-cols-2 sm:grid-cols-1 gap-4 items-start">
       <StatCard
-        end={20} 
+        end={20}
         title="Satisfied Clients"
         description="We have helped over 20 clients in setting up websites for their business and enhancing their social media presence."
       />

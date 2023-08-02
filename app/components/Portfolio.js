@@ -1,9 +1,8 @@
-import Link from "next/link";
 import ProjectCard from "./ProjectCard";
 
 const Portfolio = () => {
   return (
-    <div className="p-4 h-screen bg-gray-100 mt-8">
+    <div className="p-4 h-screen bg-gray-100 mt-8 mb-80">
       <div className="flex flex-col items-center">
         <span className="text-orange-500 underline relative pb-2 font-bold text-xl">
           <span className="absolute left-[-32px] top-[-10px] font-bold text-3xl">...</span>
