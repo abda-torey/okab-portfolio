@@ -1,5 +1,6 @@
 "use client";
 import { useState } from "react";
+import { Link as ScrollLink, animateScroll as scroll } from "react-scroll";
 import Link from "next/link";
 import Image from "next/image";
 import Popup from "./Popup";
@@ -68,12 +69,12 @@ const Navbar = () => {
     <Link href="/" className="block  mt-4 lg:inline-block lg:mt-0 text-white-200 mr-4">
       Home
     </Link>
-    <Link href="/services" className="block mt-4 lg:inline-block lg:mt-0 text-white-200 mr-4">
-      Services
-    </Link>
-    <Link href="/portfolio" className="block mt-4 lg:inline-block lg:mt-0 text-white-200 mr-4">
+    <ScrollLink to="#services" smooth={true} duration={500} href=""  className="block mt-4 lg:inline-block lg:mt-0 text-white-200 mr-4">
+      Services  
+    </ScrollLink>
+    <ScrollLink to="#portfolio" smooth={true} duration={500} href=""  className="block mt-4 lg:inline-block lg:mt-0 text-white-200 mr-4">
       Portfolio
-    </Link>
+    </ScrollLink>
     <Link href="/about" className="block mt-4 lg:inline-block lg:mt-0 text-white-200 mr-4">
       About Us
     </Link>

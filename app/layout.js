@@ -1,6 +1,8 @@
 import './globals.css'
 import { Inter } from 'next/font/google'
 import Head from 'next/head'
+import Navbar from '../components/Navbar'
+import Footer from '../components/Footer';
 
 
 
@@ -22,7 +24,9 @@ export default function RootLayout({ children }) {
         <link rel="icon" href="/favicon.ico" />
         <title>{metadata.title}</title>
       </Head>
-      <body className={inter.className}>{children}</body>
+     
+      <body className={inter.className}> <Navbar />{children}<Footer /></body>
+      
     </html>
   )
 }
