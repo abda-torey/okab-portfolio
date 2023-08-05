@@ -210,12 +210,12 @@ const Footer = () => {
 //   </div>
 // </footer>
 
-<footer className="bg-gray-900 text-white py-6 px-4">
-    <div className="container mx-auto flex flex-col md:flex-row justify-center items-center">
+<footer className=" bg-gray-900 text-white py-6  px-4 mt-auto">
+    <div className="container mx-auto flex flex-col md:flex-row justify-center  items-center">
       <div className="mb-4 md:mb-0">
         <div className="flex space-x-2">
           <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
-            <FaFacebook className="w-6 h-6 hover:text-gray-300"/>
+            <FaFacebook className="w-6 h-6 hover:text-gray-500"/>
           </a>
           <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" aria-label="Twitter">
             <FaTwitter className="w-6 h-6 hover:text-gray-300"/>
@@ -236,7 +236,7 @@ const Footer = () => {
       </div>
     </div>
 
-    <div className="text-center mt-4">
+    <div className="text-center mt-4 md:mt-0">
       <p>&copy; {new Date().getFullYear()} ICECUBE. All rights reserved.</p>
     </div>
   </footer>

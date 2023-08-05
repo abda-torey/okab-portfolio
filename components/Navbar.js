@@ -1,20 +1,34 @@
 "use client";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { Link as ScrollLink, animateScroll as scroll } from "react-scroll";
 import Link from "next/link";
 import Image from "next/image";
 import Popup from "./Popup";
-Image
+
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [isModalOpen, setIsModalOpen] = useState(false);
+
+ 
+  useEffect(()=>{
+    window.addEventListener('scroll', function () {
+      const navbar = document.querySelector('nav');
+      
+      if (window.scrollY > 0) {
+        navbar.classList.add('border-opacity-100');
+      } else {
+        navbar.classList.remove('border-opacity-100');
+      }
+    });
+  })
+
 
   const onSubmit = data => {
     console.log(data);
   };
 
   return (
-    <nav className="flex items-center bg-white-800 text-dark justify-between flex-wrap p-6">
+    <nav className="sticky top-0 z-50  flex items-center bg-white/90 text-dark justify-between flex-wrap p-6 border-b-2 border-gray-200 border-opacity-0 transition-opacity duration-300">
       <div className="flex items-center flex-shrink-0 text-dark mr-6 lg:mr-72">
         {/* a puzzle piece svg from heroIcons*/}
         {/* <svg

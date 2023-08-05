@@ -25,7 +25,7 @@ export default function RootLayout({ children }) {
         <title>{metadata.title}</title>
       </Head>
      
-      <body className={inter.className}> <Navbar />{children}<Footer /></body>
+      <body className={`{inter.className} flex flex-col min-h-screen`}> <Navbar />{children}<Footer /></body>
       
     </html>
   )

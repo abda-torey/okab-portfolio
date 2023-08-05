@@ -8,9 +8,9 @@ const Hero = () => {
     
         <div className={` ${styles.heroText} flex flex-col justify-start mt-1 ml-6 order-2`}>
           <h2 className="text-xl font-semibold tracking-tight md:mt-10  lg:text-4xl text-gray-900 mb-3 ">
-            We do web designs for businesses
+          Empowering businesses through tailored web design solutions.
           </h2>
-          <p className="text-xl mb-4">We help them grow</p>
+          <p className="text-xl mb-4">We set them for unprecedented growth</p>
          
           <div>
             <Link
