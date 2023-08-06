@@ -202,20 +202,15 @@ const Footer = () => {
 
  
 //   <div class="bg-neutral-200 p-6 text-center dark:bg-neutral-700">
-//     <span>© 2023 Copyright:By </span>
-//     <a
-//       class="font-semibold text-neutral-600 dark:text-neutral-400"
-//       href="https://tailwind-elements.com/"
-//       >Icecube</a>
+//     <span>© {new Date().getFullYear()} | Icecube </span> 
 //   </div>
-// </footer>
-
-<footer className=" bg-gray-900 text-white py-6  px-4 mt-10 ">
-    <div className="container mx-auto flex flex-col md:flex-row justify-center  items-center">
+//    </footer> 
+ <footer className=" bg-gray-900 text-gray-500 py-6  px-4 mt-10 ">  
+     <div className="container mx-auto flex flex-col md:flex-row justify-center  items-center">
       <div className="mb-4 md:mb-0">
         <div className="flex space-x-2">
           <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
-            <FaFacebook className="w-6 h-6 hover:text-gray-500"/>
+           <FaFacebook className="w-6 h-6 hover:text-gray-300"/>
           </a>
           <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" aria-label="Twitter">
             <FaTwitter className="w-6 h-6 hover:text-gray-300"/>
@@ -237,10 +232,14 @@ const Footer = () => {
     </div>
 
     <div className="text-center mt-4 md:mt-0">
-      <p>&copy; {new Date().getFullYear()} ICECUBE. All rights reserved.</p>
-    </div>
-  </footer>
-  )
-}
-
+       <p>&copy; {new Date().getFullYear()} ICECUBE. All rights reserved.</p>
+     </div>
+   </footer>
+//   )
+//       class="font-semibold text-neutral-600 dark:text-neutral-400"
+//       href="https://tailwind-elements.com/"
+//       >Icecube</a>
+//   </div>
+)}
 export default Footer
+
