@@ -13,6 +13,7 @@ const Services = () => (
         <div className="font-bold text-xl mb-2">Web App Development</div>
         <p className="text-gray-700 text-base">
           We develop tailored web apps to help your business grow.
+          We utilize React, a cutting-edge technology library that also powers platforms like Facebook. 
         </p>
       </div>
 
