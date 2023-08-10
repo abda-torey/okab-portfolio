@@ -83,9 +83,12 @@ const Navbar = () => {
     <Link href="/" className="block  mt-4 lg:inline-block lg:mt-0 text-white-200 mr-4">
       Home
     </Link>
-    <ScrollLink to="#services" smooth={true} duration={500} href=""  className="block mt-4 lg:inline-block lg:mt-0 text-white-200 mr-4">
+    <Link href="/services" className="block  mt-4 lg:inline-block lg:mt-0 text-white-200 mr-4">
+      Services
+    </Link>
+    {/* <ScrollLink to="#services" smooth={true} duration={500} href=""  className="block mt-4 lg:inline-block lg:mt-0 text-white-200 mr-4">
       Services  
-    </ScrollLink>
+    </ScrollLink> */}
     <ScrollLink to="#portfolio" smooth={true} duration={500} href=""  className="block mt-4 lg:inline-block lg:mt-0 text-white-200 mr-4">
       Portfolio
     </ScrollLink>

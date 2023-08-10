@@ -1,14 +1,21 @@
 import './globals.css'
-import { Inter } from 'next/font/google'
+// import { Inter } from 'next/font/google'
 import Head from 'next/head'
 import Navbar from '../components/Navbar'
 import Footer from '../components/Footer';
+import { Poppins } from 'next/font/google';
+
+const poppins = Poppins({
+  subsets: ['latin'],
+  display: 'swap',
+  variable: '--font-poppins',
+  weight: ['100', '200', '300', '400', '500', '600', '700', '800', '900']
+});
 
 
 
 
-
-const inter = Inter({ subsets: ['latin'] })
+// const inter = Inter({ subsets: ['latin'] })
 
 export const metadata = {
   title: 'IceCube',
@@ -25,7 +32,7 @@ export default function RootLayout({ children }) {
         <title>{metadata.title}</title>
       </Head>
      
-      <body className={`{inter.className} `}> <Navbar />{children}<Footer /></body>
+      <body className={`{poppins.className} `}> <Navbar />{children}<Footer /></body>
       
     </html>
   )
