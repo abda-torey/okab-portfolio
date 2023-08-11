@@ -52,10 +52,10 @@ Empowering businesses through tailored web design solutions. We set them for unp
 </button>
 </div>
 </div>
-<div class="absolute left-0 items-center justify-center hidden px-4 transform -translate-y-1/2 xl:-translate-x-1/2 lg:inline-flex top-1/2 ">
-<img src="https://i.postimg.cc/WbrFCPkr/pexels-fauxels-3184357.jpg" class="object-cover border-4 w-52 h-52sss xl:w-80 xl:h-80 rounded-3xl border-gray-50"/>
+<div class="absolute left-0 items-center justify-center hidden px-4 transform -translate-y-1/2 xl:-translate-x-1/2 lg:inline-flex top-1/2 transition-all duration-100">
+<img src="https://i.postimg.cc/WbrFCPkr/pexels-fauxels-3184357.jpg" class="object-cover border-4 w-52 h-52sss xl:w-80 xl:h-80 rounded-3xl border-black/30 shadow-sm"/>
 </div>
-    <div class="absolute top-0 right-0 items-center justify-center hidden lg:inline-flex">
+    <div class="absolute top-0 right-0 items-center justify-center hidden lg:inline-flex animate-pulse ">
       <svg width="290" height="166" fill="none" xmlns="http://www.w3.org/2000/svg">
           <mask id="a"  maskUnits="userSpaceOnUse" x="0" y="0" width="290" height="166">
             <path fill="url(#paint0_linear_228_431)" d="M0 0H290V165.838H0z"></path>
