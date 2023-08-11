@@ -32,7 +32,7 @@ const Hero = () => {
     //     </div>
     // </div>
     // from-blue-900 via-cyan-900 to-sky-900 earlier color
-    <section class="flex items-center  h-100vh bg-gray-100 font-poppins dark:bg-gray-800 ">
+    <section class="flex items-center  h-100vh bg-orange-200/30 font-poppins dark:bg-gray-800 ">
 <div class="justify-center flex-1 max-w-6xl px-4 py-4 mx-auto lg:py-10 md:px-7">
 <div class="relative py-24 bg-gradient-to-l from-orange-900/30 via-orange-200 to-cyan-500/30 rounded-2xl"> 
 <div class="max-w-lg px-4 mx-auto text-left">
