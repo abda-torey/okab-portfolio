@@ -48,10 +48,10 @@ const Navbar = () => {
         </svg> */}
         <Image
           src="/logo.svg"
-          width={75}
-          height={75}
+          width={100}
+          height={100}
         />
-        <span className="font-mono font-semibold md:text-xl  ml-3">IceCube</span>
+        {/* <span className="font-mono font-semibold md:text-xl  ml-3">IceCube</span> */}
       </div>
 
       <div className="block lg:hidden">
