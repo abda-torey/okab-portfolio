@@ -97,7 +97,7 @@ const Navbar = () => {
     </Link>
   </div>
   <div>
-    <button className="font-semibold inline-flex items-center rounded  bg-amber-500 border-0 my-4 py-2 px-4 text-white"
+    <button className="font-semibold inline-flex items-center rounded  bg-orange-500 border-0 my-4 py-2 px-4 text-white"
     onClick={() => setIsModalOpen(true)}
     >
       Talk to Us
