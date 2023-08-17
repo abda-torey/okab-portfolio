@@ -15,9 +15,9 @@ const Navbar = () => {
       const navbar = document.querySelector('nav');
       
       if (window.scrollY > 0) {
-        navbar.classList.add('border-opacity-100');
+        navbar.classList.add('border-opacity-100','bg-orange-100/90');
       } else {
-        navbar.classList.remove('border-opacity-100');
+        navbar.classList.remove('border-opacity-100', 'bg-orange-100/90');
       }
     });
   })
@@ -28,7 +28,7 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="sticky top-0 z-50  flex items-center bg-white/90 text-dark justify-between flex-wrap p-6 border-b-2 border-gray-200 border-opacity-0 transition-opacity duration-300">
+    <nav className="sticky top-0 z-50  flex items-center bg-orange/80 text-dark justify-between flex-wrap p-4 border-b-2 border-gray-200 border-opacity-0 transition-opacity duration-300">
       <div className="flex items-center flex-shrink-0 text-dark mr-6 lg:mr-72">
         {/* a puzzle piece svg from heroIcons*/}
         {/* <svg
@@ -83,7 +83,7 @@ const Navbar = () => {
     <Link href="/" className="block  mt-4 lg:inline-block lg:mt-0 text-white-200 mr-4">
       Home
     </Link>
-    <Link href="/services" className="block  mt-4 lg:inline-block lg:mt-0 text-white-200 mr-4">
+    <Link href="/services" scroll={false} className="block  mt-4 lg:inline-block lg:mt-0 text-white-200 mr-4">
       Services
     </Link>
     {/* <ScrollLink to="#services" smooth={true} duration={500} href=""  className="block mt-4 lg:inline-block lg:mt-0 text-white-200 mr-4">
