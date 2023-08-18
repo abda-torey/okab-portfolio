@@ -3,7 +3,7 @@ import { FaWhatsapp,FaPhoneAlt } from "react-icons/fa";
 
 function ContactUsPage() {
   return (
-    <section class="bg-white ">
+    <section class="bg-white p-20 ">
       <div class="container px-6 py-12 mx-auto">
         <div>
           <p class="font-medium text-blue-500 dark:text-blue-400">Contact us</p>
@@ -115,7 +115,7 @@ function ContactUsPage() {
             </div>
           </div>
 
-          <div class="p-4 py-6 rounded-lg bg-gray-50 dark:bg-gray-800 md:p-8">
+          <div class="p-4 py-6 rounded-lg bg-gray-50 dark:bg-gray-800 md:p-8 max-w-lg mb-8 mt-0">
           <h1 class="mt-2 mb-3 text-xl font-semibold text-gray-800 md:text-xl dark:text-white">
             Describe Your Project.
           </h1>

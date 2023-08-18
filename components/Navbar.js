@@ -8,19 +8,35 @@ import Popup from "./Popup";
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [isModalOpen, setIsModalOpen] = useState(false);
+  const [lastScrollTop, setLastScrollTop] = useState(0);
+  const [shouldStick, setShouldStick] = useState(false);
 
  
-  useEffect(()=>{
-    window.addEventListener('scroll', function () {
-      const navbar = document.querySelector('nav');
+  useEffect(() => {
+    function handleScroll() {
+      const currentScrollTop = window.pageYOffset || document.documentElement.scrollTop;
       
+<<<<<<< HEAD
       if (window.scrollY > 0) {
         navbar.classList.add('border-opacity-100','bg-orange-100/90');
       } else {
         navbar.classList.remove('border-opacity-100', 'bg-orange-100/90');
+=======
+      // Check if user is scrolling up
+      if (currentScrollTop < lastScrollTop) {
+        setShouldStick(true);
+      } else {
+        setShouldStick(false);
+>>>>>>> 28d94591c3c37e8e431087f788667ee249e4a030
       }
-    });
-  })
+      setLastScrollTop(currentScrollTop <= 0 ? 0 : currentScrollTop);
+    }
+
+    window.addEventListener('scroll', handleScroll);
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, [lastScrollTop]);
 
 
   const onSubmit = data => {
@@ -28,7 +44,11 @@ const Navbar = () => {
   };
 
   return (
+<<<<<<< HEAD
     <nav className="sticky top-0 z-50  flex items-center bg-orange/80 text-dark justify-between flex-wrap p-4 border-b-2 border-gray-200 border-opacity-0 transition-opacity duration-300">
+=======
+    <nav className={`flex items-center bg-white/90 text-dark justify-between flex-wrap p-6 border-b-2 border-gray-200 border-opacity-0 transition-opacity duration-300 ${shouldStick ? 'sticky top-0 z-50' : ''}`}>
+>>>>>>> 28d94591c3c37e8e431087f788667ee249e4a030
       <div className="flex items-center flex-shrink-0 text-dark mr-6 lg:mr-72">
         {/* a puzzle piece svg from heroIcons*/}
         {/* <svg
