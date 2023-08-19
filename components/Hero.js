@@ -33,12 +33,13 @@ const Hero = () => {
     //     </div>
     // </div>
     // from-blue-900 via-cyan-900 to-sky-900 earlier color
-    <section className="flex items-center h-100vh bg-gradient-to-l from-lime-50 via-orange-100 to-gray-50 font-poppins  ">
+    <section className="flex items-center bg-gradient-to-l from-gray-50 via-gray-50 to-gray-100 font-poppins  ">
         <div className="justify-center flex-1 max-w-6xl  px-4 py-4 mx-auto lg:py-10 md:px-7">
-        <div className="relative py-24  rounded"> 
+        <div className="relative p-20  rounded"> 
         <div className="max-w-lg px-4 mx-auto  text-left">
-        <h2 className="flex flex-wrap items-center justify-center text-4xl font-bold tracking-wide text-black my-7 dark:text-gray-300 md:text-6xl">
-          Join us Today
+        <h2 className="flex flex-wrap items-center justify-center text-4xl font-bold tracking-wide text-orange-500 my-7 dark:text-gray-300 md:text-6xl">
+          Imagine <span className="pl-4 text-3xl text-black "> Tomorrow.</span>
+          <span className=" text-8xl text-black ">Design </span> <span className="text-3xl pl-4">Today.</span>
         </h2>
         <p className="mb-8 text-center font-medium text-black dark:text-gray-400 md:text-lg">
           Empowering businesses through tailored web design solutions. We set them for unprecedented growth.
