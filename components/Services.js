@@ -3,8 +3,8 @@ import { FaLaptopCode, FaSearch, FaRegLightbulb } from "react-icons/fa";
 
 const Services = () => (
   <div className="p-8 mb-8  bg-gray-100" id = "#services">
-    <h1 className="text-xl font-semibold text-center mt-6 mb-6">
-      <span className="rounded-lg font-helvetica text-blue-600 px-3 py-1 inline-block">What We Do</span>
+    <h1 className=" font-extralight text-center mt-6 mb-6">
+      <span className="rounded-2xl text-xs bg-green-100 font-helvetica text-green-500 px-3 py-1 inline-block">What We Do</span>
     </h1>
     <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
       {/* Web App Development Card */}

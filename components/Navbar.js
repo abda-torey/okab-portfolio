@@ -3,15 +3,17 @@ import { useEffect, useState } from "react";
 import { Link as ScrollLink, animateScroll as scroll } from "react-scroll";
 import Link from "next/link";
 import Image from "next/image";
-import Popup from "./Popup";
+
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
-  const [isModalOpen, setIsModalOpen] = useState(false);
+  
   const [lastScrollTop, setLastScrollTop] = useState(0);
   const [shouldStick, setShouldStick] = useState(false);
 
- 
+  const handleLinkClick = () => {
+    setIsOpen(false);
+  };
   useEffect(() => {
     function handleScroll() {
       const currentScrollTop = window.pageYOffset || document.documentElement.scrollTop;
@@ -89,10 +91,10 @@ const Navbar = () => {
   className={`w-full block pl-9   lg:flex lg:items-center lg:w-auto ${isOpen ? "block" : "hidden"} lg:justify-end`}
 >
   <div className="font-helvetica font-semibold lg:flex-grow lg:items-center ">
-    <Link href="/" className="block  mt-4 lg:inline-block lg:mt-0 text-white-200 mr-4">
+    <Link href="/" className="block  mt-4 lg:inline-block lg:mt-0 text-white-200 mr-4" onClick={handleLinkClick}>
       Home
     </Link>
-    <Link href="/services" className="block  mt-4 lg:inline-block lg:mt-0 text-white-200 mr-4">
+    <Link href="/services" className="block  mt-4 lg:inline-block lg:mt-0 text-white-200 mr-4" onClick={handleLinkClick}>
       Services
     </Link>
     {/* <ScrollLink to="#services" smooth={true} duration={500} href=""  className="block mt-4 lg:inline-block lg:mt-0 text-white-200 mr-4">
@@ -101,7 +103,7 @@ const Navbar = () => {
     <ScrollLink to="#portfolio" smooth={true} duration={500} href=""  className="block mt-4 lg:inline-block lg:mt-0 text-white-200 mr-4">
       Portfolio
     </ScrollLink>
-    <Link href="/about" className="block mt-4 lg:inline-block lg:mt-0 text-white-200 mr-4">
+    <Link href="/about" className="block mt-4 lg:inline-block lg:mt-0 text-white-200 mr-4" onClick={handleLinkClick}>
       About Us
     </Link>
   </div>
@@ -113,7 +115,7 @@ const Navbar = () => {
 
   </div>
 </div>
-<Popup isOpen={isModalOpen} setIsOpen={setIsModalOpen} onSubmit={onSubmit} />
+
     </nav>
   );
 };
