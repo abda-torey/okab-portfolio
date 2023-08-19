@@ -13,8 +13,7 @@ const  notFound = () => {
                         Sorry! we are unable to find the page that you are looking for...
                     </p>
                     <div className="flex flex-wrap items-center justify-center">
-                        <Link href="/"
-                            className="px-8 py-4 mb-4 mr-4 text-sm font-medium text-gray-100 bg-blue-600 rounded-full hover:bg-blue-800 md:w-auto">
+                        <Link href='/' className="px-8 py-4 mb-4 mr-4 text-sm font-medium text-gray-100 bg-blue-600 rounded-full hover:bg-blue-800 md:w-auto">
                             Back Home
                         </Link>
                     </div>
