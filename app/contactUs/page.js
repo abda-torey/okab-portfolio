@@ -3,8 +3,8 @@ import { FaWhatsapp,FaPhoneAlt } from "react-icons/fa";
 
 function ContactUsPage() {
   return (
-    <section class="bg-gray-100 px-40 h-screen">
-      <div class="container px-6 py-12 ">
+    <section class="bg-gray-100 px-40 h-100vh">
+      <div class="px-6 py-12 ">
         <div>
           <p class="font-medium text-blue-500 dark:text-blue-400">Contact us</p>
 
@@ -17,9 +17,9 @@ function ContactUsPage() {
           </p>
         </div>
 
-        <div class="grid grid-cols-1  mt-8 lg:grid-cols-2 ">
-          <div class="grid grid-cols-2 md:grid-cols-2">
-            <div>
+        <div class="grid grid-cols-1 sm:grid-cols-1 mt-8 lg:grid-cols-2 ">
+          <div class="grid grid-cols-2 md:grid-cols-2 gap-8">
+            <div className="gap-6">
               <span class="inline-block p-3 text-blue-500 rounded-full bg-blue-100/80 dark:bg-gray-800">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"

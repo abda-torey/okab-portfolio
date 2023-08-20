@@ -40,7 +40,7 @@ const Navbar = () => {
   };
 
   return (
-    <nav className={`flex items-center bg-white/90 text-dark justify-between flex-wrap p-6 border-b-2 border-gray-200 border-opacity-0 transition-opacity duration-300 ${shouldStick ? 'sticky top-0 z-50' : ''}`}>
+    <nav className={`flex items-center bg-white/90 text-dark justify-between flex-wrap py-1 px-6 border-b-2 border-gray-200 border-opacity-0 transition-opacity duration-300 ${shouldStick ? 'sticky top-0 z-50' : ''}`}>
       <div className="flex items-center flex-shrink-0 text-dark mr-6 lg:mr-72">
         {/* a puzzle piece svg from heroIcons*/}
         {/* <svg

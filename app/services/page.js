@@ -3,7 +3,7 @@ import { FaLaptopCode, FaSearch, FaRegLightbulb } from "react-icons/fa";
 
 function ServicesPage() {
   return (
-    <section className="flex items-center bg-gray-100 h-screen ">
+    <section className="flex items-center bg-gray-100 h-100vh">
       <div className="justify-center flex-1 max-w-6xl px-4 py-4 mx-auto md:px-6 mb-8">
         <h2 className="pb-2 text-xl font-bold text-center text-gray-800 md:text-3xl dark:text-gray-400">
           Our Features
